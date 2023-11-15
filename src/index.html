@@ -3,26 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Card Generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div
+      class="container-fluid d-flex flex-column align-items-center bg-success vw-100 vh-100"
+    >
+      <h1 class="text-white">Card Generator</h1>
+      <button type="button" id="generator" class="btn btn-dark">
+        New card
+      </button>
+
+      <div
+        id="parentCard"
+        class="container d-flex flex-column justify-content-between bg-white my-4 rounded"
+        style="height: 250px; width: 150px;"
+      >
+        <div class="fs-1 suitIcon"></div>
+        <div id="number" class="align-self-center fs-1"></div>
+        <div class="align-self-end fs-1 suitIcon"></div>
       </div>
     </div>
   </body>
